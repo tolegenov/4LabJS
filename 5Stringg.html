@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>lab4-1</title>
+<body>
+<script language="Javascript">
+
+function getFrequency(str) {
+  return str.split('').reduce( (prev, curr) => {
+    prev[curr] = prev[curr] ? prev[curr] + 1 : 1;
+    return prev;
+  }, {});
+};
+
+console.log(getFrequency('test')); // => {t: 2, e: 1, s: 1}
+
+</script>
+</body>
+</html>
